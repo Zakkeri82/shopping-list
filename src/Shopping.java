@@ -21,7 +21,12 @@ public class Shopping {
             System.out.println("3. Очистить список");
             System.out.println("4. Завершить работу");
 
-            int actionNumber = scanner.nextInt();
+            int actionNumber = 0;
+            if (scanner.hasNextInt()) {
+                actionNumber = scanner.nextInt();
+            } else {
+                scanner.next();
+            }
 
             if (actionNumber == 1) {
                 System.out.println("Введите название товара");
