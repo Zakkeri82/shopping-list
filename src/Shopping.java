@@ -36,8 +36,8 @@ public class Shopping {
                 }
                 if (copy) {
                     shoppingList.add(product);
-                    System.out.println("Товар " + product + " добавлен в список под номером " + (productCount + 1));
                     productCount++;
+                    System.out.println("Товар " + product + " добавлен в список под номером " + productCount);
                 }
 
             } else if (actionNumber == 2) {
